@@ -1,0 +1,120 @@
+.market-table-container {
+  padding: 24px;
+  width: 100%;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-all {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-table th {
+  text-align: left;
+  padding: 12px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+}
+
+.market-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.market-table tr:last-child td {
+  border-bottom: none;
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.asset-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.asset-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.asset-symbol {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.change-pill {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.change-pill.up {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.change-pill.down {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.trade-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.trade-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.font-mono {
+  font-family: 'Inter', monospace;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .market-table th:nth-child(4),
+  .market-table td:nth-child(4) {
+    display: none;
+  }
+}
