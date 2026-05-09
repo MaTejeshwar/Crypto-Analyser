@@ -65,4 +65,4 @@ npx vercel
 This project was built as a solution to the "Cryptocurrency Analytics Dashboard" challenge, emphasizing a data-heavy interface that remains intuitive and visually engaging without relying on real APIs.
 
 ---
-Developed with ❤️ by Antigravity AI
+Developed by M. A. Tejeshwar
